@@ -1,4 +1,24 @@
-## [L-01] Improper external calculation of unwrap fee
+## [L-01] Protocol is not ERC-1155 compliant
+_This issue was downgraded from Medium to Low_
+
+### Impact
+The `Ocean` contract is not fully compliant with the ERC-1155 standard. Specifically, the `onERC1155Received` and `onERC1155BatchReceived` [functions](https://github.com/code-423n4/2023-11-shellprotocol/blob/main/src/ocean/Ocean.sol#L317-L366) do not revert when they reject a transfer. According to the [ERC-1155 standard](https://eips.ethereum.org/EIPS/eip-1155#erc-1155-token-receiver), these functions MUST revert if they reject a transfer.
+This may have been a deliberate choice by the authors given the comments in the functions' documentation, but ERC-1155 adherence is explicitly listed as an invariant in the contest documentation and this behaviour represents strict non-conformity.
+
+### Proof of Concept
+This could lead to a potential loss of funds if an external IERC1155 contract is improperly implemented and doesn't check for the return value of `onERC1155Received`. In such a case, a user could unknowingly transfer tokens to the `Ocean` contract without a proper interaction. Since the `Ocean` contract doesn't revert the transaction, the tokens would be transferred successfully, but without the required interaction to credit them to the user in the ocean. This could lead to the tokens being stuck in the `Ocean` contract, resulting in a loss of funds for the user.
+
+### Tools Used
+Manual inspection
+
+### Recommended Mitigation Steps
+To ensure full compliance with the ERC-1155 standard, modify the `onERC1155Received` and `onERC1155BatchReceived` functions to revert when a transfer is rejected. This can be achieved by replacing the `return 0;` statement with a `revert` statement.
+
+## Assessed type
+
+Other
+
+## [L-02] Improper external calculation of unwrap fee
 
 ### Context
 
@@ -23,7 +43,7 @@ The code implicitly assumes that Adapters need to truncate the `unwrappedAmount`
 Instead of attempting to recalculate the fee outside of the Ocean, the unwrapped amount should be inferred from the balance change and passed to `primitiveOutputAmount`, ideally already in the token's precision. This would ensure that the correct amount is used in the calculations.
 
 
-## [L-02] Incorrect event parameter in swap action
+## [L-03] Incorrect event parameter in swap action
 
 ### Context
 
@@ -46,7 +66,7 @@ if (action == ComputeType.Swap) {
 To ensure the event logs accurately reflect the operations performed, it is recommended to emit the `Swap` event with `rawInputAmount` instead of `inputAmount`. This will ensure that the logged amount is the actual amount used in the swap operation. 
 
 
-## [L-03] Incorrect documentation regarding int256 maximum value
+## [L-04] Incorrect documentation regarding int256 maximum value
 
 ### Context
 
@@ -67,7 +87,7 @@ In addition, given the above, it is also safe to use strict equality in the abov
 The documentation should be corrected to accurately reflect the properties of `int256`. The correct statement should be: "the maximum value of `int256` is one unit lower than the absolute value of the minimum value". This will ensure that the documentation is accurate and does not lead to potential misunderstandings or errors in the future.
 
 
-## [L-04] Unnecessary fallback function
+## [L-05] Unnecessary fallback function
 
 ### Context
 
@@ -82,7 +102,7 @@ The contract `CurveTricryptoAdapter` includes a fallback function that is not ne
 Remove the fallback function and replace it with a `receive()` function. 
 
 
-## [L-05] Missing sender address check
+## [L-06] Missing sender address check
 
 ### Context
 
