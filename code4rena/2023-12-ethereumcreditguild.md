@@ -1,4 +1,3 @@
-
 ## [M-01] Inability to withdraw funds for certain users due to `whenNotPaused` modifier in `RateLimitedMinter`
 
 ### Lines of code
@@ -257,3 +256,174 @@ Manual review
 
 ### Recommended Mitigation Steps
 To mitigate this issue, consider adding a check in the `proposeOnboard()` function to ensure that a term cannot be re-onboarded if it hasn't been cleaned up. This could be done by checking if `LendingTermOffboarding.canOffboard[term]` is `false` before allowing the term to be onboarded. 
+
+
+## [L-01] Incorrect constant used in deployment script
+_This issue was downgraded from Medium to Low_
+
+### Lines of code
+
+[GIP_0.sol#L308](https://github.com/code-423n4/2023-12-ethereumcreditguild/blob/main/test/proposals/gips/GIP_0.sol#L308)
+
+### Impact
+In the deployment script, the constant `SDAI_CREDIT_HARDCAP` is intended to be used to set the hardcap for SDAI credit in the `LendingTermParams` struct. However, another constant `CREDIT_HARDCAP` is being used instead. While these two values are the same and hence this mistake has no effect, it could lead to incorrect behavior of the contract if either of the two values is modified in this or future deployments.
+
+### Proof of Concept
+In the `GIP_0.sol` file, the constant `SDAI_CREDIT_HARDCAP` is declared but not used. Instead, the constant `CREDIT_HARDCAP` is used in the `LendingTermParams` function to set the hardcap for SDAI credit.
+
+https://github.com/code-423n4/2023-12-ethereumcreditguild/blob/main/test/proposals/gips/GIP_0.sol#L308
+
+### Tools Used
+Manual review
+
+### Recommended Mitigation Steps
+Replace the usage of `CREDIT_HARDCAP` with `SDAI_CREDIT_HARDCAP` in the `LendingTermParams` function to ensure the correct hardcap is set for SDAI credit. This will prevent any unintended consequences of modifying the `CREDIT_HARDCAP`  or `SDAI_CREDIT_HARDCAP` constants.
+
+
+## [L-02] DoS in `LendingTermOnboarding` via proposal creation and cancellation
+_This issue was downgraded from High to Low_
+
+### Lines of code
+
+[LendingTermOnboarding.sol#L181](https://github.com/code-423n4/2023-12-ethereumcreditguild/blob/main/src/governance/LendingTermOnboarding.sol#L181)  
+[Governor.sol#L348](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/fd81a96f01cc42ef1c9a5399364968d0e07e9e90/contracts/governance/Governor.sol#L348)
+
+### Impact
+The `LendingTermOnboarding` contract is vulnerable to a Denial of Service (DoS) attack. This vulnerability arises from the ability for an attacker to repeatedly create and cancel proposals every time a term is created and after the `MIN_DELAY_BETWEEN_PROPOSALS` period.
+
+This vulnerability is related to https://github.com/OpenZeppelin/openzeppelin-contracts/security/advisories/GHSA-5h3x-9wvq-w4m2
+
+The vulnerability referenced above was fixed in v4.9.1 of OZ's contracts by introducing opt-in frontrunning protection, but that protection isn't available in LendingTermOnboarding since the contract disallows custom proposals and enforces a deterministic description in `proposeOnboard()` based on the term address.
+
+An attacker can exploit this vulnerability by observing when someone creates a term, then calling `proposeOnboard()` themselves. They can then cancel the proposal using the `cancel()` method provided by the `Governor` contract, from which `LendingTermOnboarding` inherits. By repeating this action every `MIN_DELAY_BETWEEN_PROPOSALS`, the attacker can effectively prevent the proposing of new terms.
+
+```solidity
+function proposeOnboard(
+    address term
+) external whenNotPaused returns (uint256 proposalId) {
+    // Check that the term has been created by this factory
+    require(created[term] != 0, "LendingTermOnboarding: invalid term");
+    // Check that the term was not subject to an onboard vote recently
+    require(
+        lastProposal[term] + MIN_DELAY_BETWEEN_PROPOSALS < block.timestamp,
+        "LendingTermOnboarding: recently proposed"
+    );
+    lastProposal[term] = block.timestamp;
+    // ...
+}
+```
+
+### Proof of Concept
+Consider the following scenario:
+
+1. Alice creates a term using the `createTerm()` function.
+2. Bob  observes Alice's transaction and calls `proposeOnboard()` with the term Alice just created before she can do so herself
+3. Bob then cancels the proposal using the `cancel()` method.
+4. Bob repeats this process every `MIN_DELAY_BETWEEN_PROPOSALS`, effectively preventing Alice and other legitimate users from proposing new terms.
+
+### Tools Used
+Manual review
+
+### Recommended Mitigation Steps
+Allow users to provide a custom `description` string to attach to the one generated in `getOnboardProposeArgs()`.  This way, they would also be able to benefit from the [frontrunning protection](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/governance/Governor.sol#L284) implemented in OZ's Governor.
+
+## [L-03] Reorg & Frontrunning Attack Vulnerability in `createTerm()`
+_This issue was downgraded from Medium to Low_
+
+### Lines of code
+
+[LendingTermOnboarding.sol#L153](https://github.com/code-423n4/2023-12-ethereumcreditguild/blob/main/src/governance/LendingTermOnboarding.sol#L153)  
+[Clones.sol#L33](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/fd81a96f01cc42ef1c9a5399364968d0e07e9e90/contracts/proxy/Clones.sol#L33)
+
+### Impact
+The `createTerm()` function in the `LendingTermOnboarding.sol` contract is vulnerable to a reorg/frontrunning attack. This function deploys a new `LendingTerm` contract using OZ's `Clone.clone()`, which uses `create()` under the hood. Here, the address derivation depends solely on the `LendingTermOnboarding` nonce.
+
+The worst-case scenario is an attacker exploiting the predictability of contract creation to manipulate votes, leading to a malicious contract being approved instead of the intended one.
+
+This is a Medium severity issues previously reported here an in the referenced reports https://solodit.xyz/issues/m-09-create-methods-are-suspicious-of-the-reorg-attack-code4rena-pooltogether-pooltogether-git
+
+### Proof of Concept
+The following sequence of events illustrates the vulnerability:
+
+1. Alice, a user with a significant amount of GUILD tokens, submits a series of transactions in which she:
+   - Calls `createTerm()` with profitable parameters 
+   - Calls `proposeOnboard()` to propose its onboarding
+   - Calls `castVote()` to cast her vote in support of her proposal
+2. Bob observes Alice's transactions and frontruns her by calling `createTerm()` with malicious parameters before Alice's transactions are executed.
+3. Bob's malicious term gets the address Alice expected to create.
+4. Since the proposal ID only depends on the term address, Alice's votes are cast in support of Bob's malicious term.
+
+### Tools Used
+Manual review
+
+### Recommended Mitigation Steps
+Use `Clones.cloneDeterministic()` passing a hash of the proposal parameters as the salt.
+
+
+## [L-04] Failed transfers in `LendingTerm.onBid()` will lead to protocol loss
+_This issue was downgraded from Medium to Low_
+
+### Lines of code
+
+[LendingTerm.sol#L804-L817](https://github.com/code-423n4/2023-12-ethereumcreditguild/blob/main/src/loan/LendingTerm.sol#L804-L817)
+
+### Impact
+The `LendingTerm.onBid()` function requires successful transfers to both the borrower and the bidder. This mandatory requirement can lead to a loss in the protocol under several circumstances. 
+
+### Proof of Concept
+Two scenarios can lead to this issue, not considering ERC-777 callbacks:
+
+1. **Borrower Blacklisted:** If a borrower gets themselves blacklisted by the collateral token, they will not be able to receive tokens. In this scenario, only the edge case where `elapseTime == _startTime + midPoint` will succeed without a loss to the protocol.
+
+2. **Transfers Paused on Collateral Token:** If a loan is called when transfers are paused on the collateral token (e.g., USDC), any bid will fail. Neither of the two transactions will succeed and the loan will have to be forgiven, leading to a loss in the protocol.
+
+### Tools Used
+Manual review
+
+### Recommended Mitigation Steps
+To mitigate this issue, a try-catch mechanism can be implemented around the transfer calls in the `onBid` function. If a transfer fails, the function should catch the error and increase the allowance accordingly so the recipient can later pull the tokens themselves. This would prevent the protocol from incurring a loss due to failed transfers.
+
+## [L-05] `clock()` will not work properly for Arbitrum due to usage of `block.number`
+_This issue was downgraded from Medium to Low_
+
+### Lines of code
+
+[GovernorVotes.sol#L25-L43](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/fd81a96f01cc42ef1c9a5399364968d0e07e9e90/contracts/governance/extensions/GovernorVotes.sol#L25-L43)  
+[Governor.sol#L180](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/fd81a96f01cc42ef1c9a5399364968d0e07e9e90/contracts/governance/Governor.sol#L180)  
+[Governor.sol#L277](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/fd81a96f01cc42ef1c9a5399364968d0e07e9e90/contracts/governance/Governor.sol#L277)
+^ the above functions are called internally through `super.` calls, either directly or through `GovernorTimelockControl`
+
+### Impact
+`clock()` and `CLOCK_MODE()` will not work correctly on Arbitrum.
+
+This issue is similar to https://github.com/code-423n4/2023-06-lybra-findings/issues/114
+
+### Proof of Concept
+`GuildGovernor`, `GuildVetoGovernor` and `LendingTermOnboarding` rely internally on the `clock()` function provided by OZ's `GovernorVotes`, which returns the block number by default if the voting token doesn't provide a `clock()` function. Furthermore, `block.number` is employed in multiple instances in `ERC20MultiVotes` to determine voting power. However, on Arbitrum, `block.number` [returns](https://docs.arbitrum.io/for-devs/concepts/differences-between-arbitrum-ethereum/block-numbers-and-time) the most recently synced L1 block number, which is only updated once per minute. This can lead to inaccurate timing, as the block number does not accurately reflect the passage of time on these networks.
+
+### Tools Used
+Manual review
+
+### Recommended Mitigation Steps
+Inherit from [IERC6372](https://docs.openzeppelin.com/contracts/4.x/api/interfaces#IERC6372) in GuildToken and CreditToken and provide a `clock()` function based on the L2 block number. Additionally, update instances of `block.number` in `ERC20MultiVotes` to use the [L2 block number](https://docs.arbitrum.io/for-devs/concepts/differences-between-arbitrum-ethereum/block-numbers-and-time#arbitrum-block-numbers).
+
+## [L-06] Constant `BLOCKS_PER_DAY` inaccurate for L2 chains
+_This issue was downgraded from Medium to Low_
+
+### Lines of code
+
+[GIP_0.sol#L83](https://github.com/code-423n4/2023-12-ethereumcreditguild/blob/main/test/proposals/gips/GIP_0.sol#L83)
+
+### Impact
+The `BLOCKS_PER_DAY` constant in the `GIP_0.sol` deployment script is set to a fixed value that corresponds to the block time on Ethereum mainnet. However, this value will not be accurate if the contract is deployed on Arbitrum or other L2s, which have a different block time. This discrepancy could lead to unexpected behavior in the contract's functionality, as any calculations or operations relying on `BLOCKS_PER_DAY` would be based on incorrect assumptions about the frequency of block generation.
+
+### Proof of Concept
+The issue can be found in the `GIP_0.sol` file where `BLOCKS_PER_DAY` is defined.
+https://github.com/code-423n4/2023-12-ethereumcreditguild/blob/main/test/proposals/gips/GIP_0.sol#L83
+
+### Tools Used
+Manual review
+
+### Recommended Mitigation Steps
+To resolve this issue, consider making `BLOCKS_PER_DAY` a dynamic variable that is defined based on the `chainId` during contract deployment. This would ensure that the value of `BLOCKS_PER_DAY` accurately reflects the block time of the specific chain where the contract is being deployed.
+
