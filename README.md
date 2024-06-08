@@ -26,7 +26,7 @@ Reports for all audit contests will be compiled here as soon as they become publ
 | [Gitcoin Passport - Identity Staking](https://code4rena.com/audits/2024-03-gitcoin-passport-identity-staking-invitational) | 4th | $50.59 | [📄](code4rena/2024-03-gitcoin.md) |
 | [reNFT - Mitigation Review](https://code4rena.com/audits/2024-02-renft-mitigation-review) | 🥈2nd | $6,065.05 | [📄](code4rena/2024-02-renft-mitigation.md) |
 | [Thruster](https://code4rena.com/audits/2024-02-thruster-invitational) | 🥈2nd | $5,210.10 | [📄](code4rena/2024-02-thruster.md) |
-| [Blast](https://cantina.xyz/competitions/c90131b4-5c7c-4ebc-a1f3-8002d219bfe0) | 31st | $10763.41 | - |
+| [Blast](https://cantina.xyz/competitions/c90131b4-5c7c-4ebc-a1f3-8002d219bfe0) | 31st | $10,763.41 | - |
 | [Olas (Cantina)](https://cantina.xyz/competitions/829164bf-7fba-4b84-a6b8-76652205bd97) | 7th | $907.68 | - |
 | [Decent](https://code4rena.com/audits/2024-01-decent) | 🥈2nd | $2,615.63 | [📄](code4rena/2024-01-decent.md) |
 | [reNFT](https://code4rena.com/audits/2024-01-renft) | 🥉3rd | $3,730.94 | [📄](code4rena/2024-02-renft.md) |
