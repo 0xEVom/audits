@@ -19,12 +19,14 @@ Reports for all audit contests will be compiled here as soon as they become publ
 
 | Contest | Ranking | Payout | Report |
 | - | :-: | :-: | :-: |
+| [Renzo - Mitigation Review](https://code4rena.com/audits/2024-06-renzo-mitigation-review) (team "LessDupes") | - | - | - |
+| [Renzo](https://code4rena.com/audits/2024-04-renzo) (team "LessDupes") | 🥇1st | $23,953.10 / 3 | - |
 | [Curvance](https://cantina.xyz/competitions/ac757733-81a4-43c7-8f49-17c5b135cdff) | - | - | - |
-| [Venus Protocol - Multichain Governance](https://cantina.xyz/competitions/ddf86a5c-6f63-430f-aadc-d8742b4b1bcf) | - | - | - |
+| [Venus Protocol - Multichain Governance](https://cantina.xyz/competitions/ddf86a5c-6f63-430f-aadc-d8742b4b1bcf) | 7th | $500 | - |
 | [Gitcoin Passport - Identity Staking](https://code4rena.com/audits/2024-03-gitcoin-passport-identity-staking-invitational) | 4th | $50.59 | [📄](code4rena/2024-03-gitcoin.md) |
 | [reNFT - Mitigation Review](https://code4rena.com/audits/2024-02-renft-mitigation-review) | 🥈2nd | $6,065.05 | [📄](code4rena/2024-02-renft-mitigation.md) |
 | [Thruster](https://code4rena.com/audits/2024-02-thruster-invitational) | 🥈2nd | $5,210.10 | [📄](code4rena/2024-02-thruster.md) |
-| [Blast](https://cantina.xyz/competitions/c90131b4-5c7c-4ebc-a1f3-8002d219bfe0) | - | - | - |
+| [Blast](https://cantina.xyz/competitions/c90131b4-5c7c-4ebc-a1f3-8002d219bfe0) | 31st | $10763.41 | - |
 | [Olas (Cantina)](https://cantina.xyz/competitions/829164bf-7fba-4b84-a6b8-76652205bd97) | 7th | $907.68 | - |
 | [Decent](https://code4rena.com/audits/2024-01-decent) | 🥈2nd | $2,615.63 | [📄](code4rena/2024-01-decent.md) |
 | [reNFT](https://code4rena.com/audits/2024-01-renft) | 🥉3rd | $3,730.94 | [📄](code4rena/2024-02-renft.md) |
