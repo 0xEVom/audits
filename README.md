@@ -4,7 +4,7 @@
 
 I'm an independent security researcher specialized in smart contract audits.
 
-Currently, I'm competing in audit contests and acting as a [Validator](https://docs.code4rena.com/roles/certified-contributors/validators) on Code4rena, where I'm ranked #19 on the yearly [leaderboard](https://code4rena.com/leaderboard).
+Currently, I'm competing in audit contests and acting as a [Validator](https://docs.code4rena.com/roles/certified-contributors/validators) on Code4rena, where I'm ranked #6 on the yearly [leaderboard](https://code4rena.com/leaderboard?timeframe=2024).
 
 For private audits or security consulting, please reach out to me on:
 
@@ -19,6 +19,7 @@ Reports for all audit contests will be compiled here as soon as they become publ
 
 | Contest | Ranking | Report |
 | - | :-: | :-: |
+| [Optimism Superchain](https://code4rena.com/audits/2024-07-optimism-superchain) (team "Radiant Labs") | - | - |
 | [Olas (Code4rena #2)](https://code4rena.com/audits/2024-05-olas) | 🥇1st | - |
 | [Renzo - Mitigation Review](https://code4rena.com/audits/2024-06-renzo-mitigation-review) (team "LessDupes") | - (tie) | - |
 | [Renzo](https://code4rena.com/audits/2024-04-renzo) (team "LessDupes") | 🥇1st | - |
