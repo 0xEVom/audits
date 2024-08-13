@@ -19,7 +19,8 @@ Reports for all audit contests will be compiled here as soon as they become publ
 
 | Contest | Ranking | Report |
 | - | :-: | :-: |
-| [Optimism Superchain](https://code4rena.com/audits/2024-07-optimism-superchain) (team "Radiant Labs") | - | - |
+| [Reserve Core](https://code4rena.com/audits/2024-07-reserve-core) (team "Radiant Labs") | - | - |
+| [Optimism Superchain](https://code4rena.com/audits/2024-07-optimism-superchain) (team "Radiant Labs") | 🥇1st | - |
 | [Olas (Code4rena #2)](https://code4rena.com/audits/2024-05-olas) | 🥇1st | - |
 | [Renzo - Mitigation Review](https://code4rena.com/audits/2024-06-renzo-mitigation-review) (team "LessDupes") | - (tie) | - |
 | [Renzo](https://code4rena.com/audits/2024-04-renzo) (team "LessDupes") | 🥇1st | - |
