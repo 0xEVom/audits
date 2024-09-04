@@ -19,8 +19,9 @@ Reports for all audit contests will be compiled here as soon as they become publ
 
 | Contest | Ranking | Report |
 | - | :-: | :-: |
-| [Reserve Core](https://code4rena.com/audits/2024-07-reserve-core) (team "Radiant Labs") | - | - |
+| [Reserve Core](https://code4rena.com/audits/2024-07-reserve-core) (team "Radiant Labs") | 🥇1st | - |
 | [Optimism Superchain](https://code4rena.com/audits/2024-07-optimism-superchain) (team "Radiant Labs") | 🥇1st | - |
+| [Fenix Finance](https://app.hats.finance/audit-competitions/fenix-0x9d7765a7ebd5b6322a30797a44a5428531970d3d/leaderboard) | 🥇1st | - |
 | [Olas (Code4rena #2)](https://code4rena.com/audits/2024-05-olas) | 🥇1st | - |
 | [Renzo - Mitigation Review](https://code4rena.com/audits/2024-06-renzo-mitigation-review) (team "LessDupes") | - (tie) | - |
 | [Renzo](https://code4rena.com/audits/2024-04-renzo) (team "LessDupes") | 🥇1st | - |
