@@ -4,7 +4,7 @@
 
 I'm an independent security researcher specialized in smart contract audits.
 
-Currently, I'm competing in audit contests and acting as a [Validator](https://docs.code4rena.com/roles/certified-contributors/validators) on Code4rena, where I'm ranked #6 on the yearly [leaderboard](https://code4rena.com/leaderboard?timeframe=2024).
+Currently, I'm competing in audit contests and acting as a [Validator](https://docs.code4rena.com/roles/certified-contributors/validators) on Code4rena, where I'm ranked #7 on the yearly [leaderboard](https://code4rena.com/leaderboard?timeframe=2024) and #3 with [Radiant Labs](https://code4rena.com/@RadiantLabs).
 
 For private audits or security consulting, please reach out to me on:
 
