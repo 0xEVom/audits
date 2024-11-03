@@ -4,7 +4,7 @@
 
 I'm an independent security researcher specialized in smart contract audits.
 
-Currently, I mostly act as a [Zenith researcher](https://code4rena.com/zenith) and [Validator](https://docs.code4rena.com/roles/certified-contributors/validators) on Code4rena, where I'm ranked #7 on the yearly [leaderboard](https://code4rena.com/leaderboard?timeframe=2024) and #3 with [Radiant Labs](https://code4rena.com/@RadiantLabs).
+Currently, I mostly act as a [Zenith Researcher](https://code4rena.com/zenith) and [Judge](https://docs.code4rena.com/roles/judges) on Code4rena, where I'm ranked #7 on the yearly [leaderboard](https://code4rena.com/leaderboard?timeframe=2024) and #3 with [Radiant Labs](https://code4rena.com/@RadiantLabs).
 
 For private audits or security consulting, please reach out to me on:
 
@@ -19,6 +19,7 @@ Reports for all audit contests will be compiled here as soon as they become publ
 
 | Contest | Ranking | Report |
 | - | :-: | :-: |
+| [Kakarot](https://code4rena.com/audits/2024-09-kakarot) (team "Radiant Labs") | ? | - |
 | [Reserve Core](https://code4rena.com/audits/2024-07-reserve-core) (team "Radiant Labs") | 🥇1st | - |
 | [Optimism Superchain](https://code4rena.com/audits/2024-07-optimism-superchain) (team "Radiant Labs") | 🥇1st | - |
 | [Fenix Finance](https://app.hats.finance/audit-competitions/fenix-0x9d7765a7ebd5b6322a30797a44a5428531970d3d/leaderboard) | 🥇1st | - |
