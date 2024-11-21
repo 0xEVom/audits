@@ -19,7 +19,7 @@ Reports for all audit contests will be compiled here as soon as they become publ
 
 | Contest | Ranking | Report |
 | - | :-: | :-: |
-| [Kakarot](https://code4rena.com/audits/2024-09-kakarot) (team "Radiant Labs") | ? | - |
+| [Kakarot](https://code4rena.com/audits/2024-09-kakarot) (team "Radiant Labs") | 🥇1st | - |
 | [Reserve Core](https://code4rena.com/audits/2024-07-reserve-core) (team "Radiant Labs") | 🥇1st | - |
 | [Optimism Superchain](https://code4rena.com/audits/2024-07-optimism-superchain) (team "Radiant Labs") | 🥇1st | - |
 | [Fenix Finance](https://app.hats.finance/audit-competitions/fenix-0x9d7765a7ebd5b6322a30797a44a5428531970d3d/leaderboard) | 🥇1st | - |
