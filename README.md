@@ -4,7 +4,7 @@
 
 I'm an independent security researcher specialized in smart contract audits.
 
-Currently, I mostly act as a [Zenith Researcher](https://code4rena.com/zenith) and [Judge](https://docs.code4rena.com/roles/judges) on Code4rena, where I'm ranked #7 on the yearly [leaderboard](https://code4rena.com/leaderboard?timeframe=2024) and #3 with [Radiant Labs](https://code4rena.com/@RadiantLabs).
+Currently, I mostly act as a [Zenith Researcher](https://code4rena.com/zenith) and [Judge](https://docs.code4rena.com/roles/judges) on Code4rena, where I'm ranked #8 on the yearly [leaderboard](https://code4rena.com/leaderboard?timeframe=2024) and #2 with [Radiant Labs](https://code4rena.com/@RadiantLabs).
 
 For private audits or security consulting, please reach out to me on:
 
