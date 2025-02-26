@@ -18,7 +18,7 @@ You can also request a quote via [Zenith](https://www.zenith.security/) to engag
 | Project | Language / Stack | Report | Collaborators | Facilitator |
 | - | :-: | :-: | - | - |
 | [Ekubo](https://ekubo.org/) | Cairo / Starknet | [view ↗](https://315464330-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FTLfgXtzlwI2fzDVFEifT%2Fuploads%2FpJYdg1jp3g9ut87p5Emq%2Fplainshift%20ekubo.pdf?alt=media&token=1a51726d-1fcc-411a-ae1d-949e90f7e2e0) | [J4X](https://cantina.xyz/u/J4X98) | [Plainshift](https://plainshift.io/) |
-| [Optimism DeputyPauseModule](https://github.com/ethereum-optimism/optimism/commit/2f17e6b67c61de5d8073d556272796d201bc740b) | Solidity | [view ↗](https://github.com/ethereum-optimism/optimism/blob/develop/docs/security-reviews/2024_12-DPM-EVom.pdf) | - | - |
+| [Optimism DeputyPauseModule](https://github.com/ethereum-optimism/optimism/commit/2f17e6b67c61de5d8073d556272796d201bc740b) | Solidity | [view ↗](https://github.com/ethereum-optimism/optimism/blob/develop/docs/security-reviews/2024_12-DPM-RadiantLabs.pdf) | - | - |
 | [Bitcorn](https://x.com/use_corn) OFT + Swap Facility | Solidity | [view ↗](https://github.com/usecorn/audits/blob/main/bitcorn/Zenith-Bitcorn-OFT-Swap-Facility.pdf) | [3DOↃ Security](https://3doc.fr/) | [Zenith](https://www.zenith.security/) |
 
 ## Audit Contests
