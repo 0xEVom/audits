@@ -2,7 +2,7 @@
 
 ## About
 
-I'm an independent security researcher specialized in Solidity and, more recently, Cairo audits. My current areas of focus are VMs, cross-chain dapps and large DeFi projects.
+I'm an independent security researcher specialized in Solidity and, more recently, Cairo audits. My current areas of focus are VMs, cross-chain applications and large DeFi projects.
 
 Outside of private engagements, I mostly act as a [Zenith Researcher](https://code4rena.com/zenith) and [Judge](https://docs.code4rena.com/roles/judges) on Code4rena, where I ranked #8 solo and #2 with [Radiant Labs](https://code4rena.com/@RadiantLabs) on the 2024 yearly [leaderboard](https://code4rena.com/leaderboard?timeframe=2024).
 
