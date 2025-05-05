@@ -25,13 +25,13 @@ You can also request a quote via [Zenith](https://www.zenith.security/) to engag
 
 | Contest | Language / Stack | Ranking | Report |
 | - | :-: | :-: | :-: |
-| [Kakarot](https://code4rena.com/audits/2024-09-kakarot) (team of 2 "Radiant Labs") | Cairo Zero / Starknet | 🥇1st | [view ↗](https://code4rena.com/reports/2024-09-kakarot) |
-| [Reserve Core](https://code4rena.com/audits/2024-07-reserve-core) (team of 2 "Radiant Labs") | Solidity | 🥇1st | [view ↗](https://code4rena.com/reports/2024-07-reserve) |
-| [Optimism Superchain](https://code4rena.com/audits/2024-07-optimism-superchain) (team of 3 "Radiant Labs") | Solidity / Yul | 🥇1st | [view ↗](https://code4rena.com/reports/2024-07-optimism) |
+| [Kakarot](https://code4rena.com/audits/2024-09-kakarot) (team of 2) | Cairo Zero / Starknet | 🥇1st | [view ↗](https://code4rena.com/reports/2024-09-kakarot) |
+| [Reserve Core](https://code4rena.com/audits/2024-07-reserve-core) (team of 2) | Solidity | 🥇1st | [view ↗](https://code4rena.com/reports/2024-07-reserve) |
+| [Optimism Superchain](https://code4rena.com/audits/2024-07-optimism-superchain) (team of 3) | Solidity / Yul | 🥇1st | [view ↗](https://code4rena.com/reports/2024-07-optimism) |
 | [Fenix Finance](https://app.hats.finance/audit-competitions/fenix-0x9d7765a7ebd5b6322a30797a44a5428531970d3d/leaderboard) | Solidity | 🥇1st | - |
 | [Olas (Code4rena #2)](https://code4rena.com/audits/2024-05-olas) | Solidity | 🥇1st | [view ↗](https://code4rena.com/reports/2024-05-olas) |
-| [Renzo - Mitigation Review](https://code4rena.com/audits/2024-06-renzo-mitigation-review) (team of 3 "LessDupes") | Solidity | tie | [view ↗](https://code4rena.com/reports/2024-04-renzo#mitigation-review) |
-| [Renzo](https://code4rena.com/audits/2024-04-renzo) (team of 3 "LessDupes") | Solidity | 🥇1st | [view ↗](https://code4rena.com/reports/2024-04-renzo) |
+| [Renzo - Mitigation Review](https://code4rena.com/audits/2024-06-renzo-mitigation-review) (team of 3) | Solidity | tie | [view ↗](https://code4rena.com/reports/2024-04-renzo#mitigation-review) |
+| [Renzo](https://code4rena.com/audits/2024-04-renzo) (team of 3) | Solidity | 🥇1st | [view ↗](https://code4rena.com/reports/2024-04-renzo) |
 | [Curvance](https://cantina.xyz/competitions/ac757733-81a4-43c7-8f49-17c5b135cdff) | Solidity | 17th | - |
 | [Venus Protocol - Multichain Governance](https://cantina.xyz/competitions/ddf86a5c-6f63-430f-aadc-d8742b4b1bcf) | Solidity | 7th | [view ↗](https://cantina.xyz/portfolio/a1f77756-21c4-43ae-a210-2ebd014d221f) |
 | [Gitcoin Passport - Identity Staking](https://code4rena.com/audits/2024-03-gitcoin-passport-identity-staking-invitational) | Solidity | 4th | [📄](code4rena/2024-03-gitcoin.md) |
