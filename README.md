@@ -4,7 +4,7 @@
 
 ## About
 
-I'm an independent security researcher specialized in Solidity, Cairo and Rust audits. My current areas of focus are VMs, cross-chain applications and ZK projects.
+I'm an independent security researcher specialized in Solidity, Cairo and Rust audits. My current areas of focus are VMs, cross-chain applications and ZK applications.
 
 I developed my expertise through competitive audits on Code4rena, where I ranked #8 solo and #2 with [Radiant Labs](https://code4rena.com/@RadiantLabs) on the 2024 yearly [leaderboard](https://code4rena.com/leaderboard?timeframe=2024). Nowadays, I (seldom) act as a judge on Code4rena and Cantina.
 
