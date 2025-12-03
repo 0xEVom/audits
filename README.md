@@ -4,7 +4,7 @@
 
 ## About
 
-I'm an independent security researcher specialized in Solidity, Cairo and Rust audits. My current areas of focus are VMs, cross-chain applications and ZK applications.
+I'm an independent security researcher specialized in Solidity, Cairo and Rust audits. My current areas of focus are VMs, cross-chain and ZK applications.
 
 I initially developed my expertise through competitive audits on Code4rena, where I ranked #8 solo and #2 with [Radiant Labs](https://code4rena.com/@RadiantLabs) on the 2024 yearly [leaderboard](https://code4rena.com/leaderboard?timeframe=2024). Nowadays, I (seldom) act as a judge on Code4rena and Cantina.
 
@@ -27,15 +27,16 @@ You can reach out to me on:
 || Mantle | Rust / OP Succinct | pending | []() | Blackthorn |
 || Fiamma | Solidity | [view ↗](https://github.com/zenith-security/reports/blob/main/reports/Fiamma%20-%20Zenith%20Audit%20Report.pdf) | []() | Zenith |
 || Polygon Vault Bridge | Solidity | [view ↗](https://www.certora.com/reports/polygon-vault-bridge) | [Gerard Persoon](https://github.com/gpersoon) | Certora |
-|| Starkware - Lombard Integration | Cairo | | | Zenith
-|| [Ekubo](https://ekubo.org/) | Cairo / Starknet | [view ↗](https://315464330-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FTLfgXtzlwI2fzDVFEifT%2Fuploads%2FpJYdg1jp3g9ut87p5Emq%2Fplainshift%20ekubo.pdf?alt=media&token=1a51726d-1fcc-411a-ae1d-949e90f7e2e0) | [J4X](https://cantina.xyz/u/J4X98) | [Plainshift](https://plainshift.io/) |
-|| [Optimism DeputyPauseModule](https://github.com/ethereum-optimism/optimism/commit/2f17e6b67c61de5d8073d556272796d201bc740b) | Solidity | [view ↗](https://github.com/ethereum-optimism/optimism/blob/develop/docs/security-reviews/2024_12-DPM-RadiantLabs.pdf) | - | - |
-|| [Bitcorn](https://x.com/use_corn) OFT + Swap Facility | Solidity | [view ↗](https://github.com/usecorn/audits/blob/main/bitcorn/Zenith-Bitcorn-OFT-Swap-Facility.pdf) | [3DOↃ Security](https://3doc.fr/) | Zenith |
+|| Starkware - Lombard Integration | Cairo / Starknet | | | Zenith
+|| Vultisig | Solidity | [view ↗](https://github.com/zenith-security/reports/blob/main/reports/Vultisig%20-%20Zenith%20Audit%20Report.pdf) | [SpicyMeatball](https://soloaudit.com/auditor/spicymeatball) | Zenith
+| Jan 2025 | [Ekubo](https://ekubo.org/) | Cairo / Starknet | [view ↗](https://315464330-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FTLfgXtzlwI2fzDVFEifT%2Fuploads%2FpJYdg1jp3g9ut87p5Emq%2Fplainshift%20ekubo.pdf?alt=media&token=1a51726d-1fcc-411a-ae1d-949e90f7e2e0) | [J4X](https://cantina.xyz/u/J4X98) | [Plainshift](https://plainshift.io/) |
+| Dec 2024 | [Optimism DeputyPauseModule](https://github.com/ethereum-optimism/optimism/commit/2f17e6b67c61de5d8073d556272796d201bc740b) | Solidity | [view ↗](https://github.com/ethereum-optimism/optimism/blob/develop/docs/security-reviews/2024_12-DPM-RadiantLabs.pdf) | - | - |
+| Dec 2024 | [Bitcorn](https://x.com/use_corn) OFT + Swap Facility | Solidity | [view ↗](https://github.com/usecorn/audits/blob/main/bitcorn/Zenith-Bitcorn-OFT-Swap-Facility.pdf) | [3DOↃ Security](https://3doc.fr/) | Zenith |
 
 ## Bug Bounties
 | Date | Project | Language | Severity | Disclosure | Platform |
 | :-: | - | :-: | :-: | - | - |
-| | Succinct | Rust | High | [view ↗](https://github.com/succinctlabs/op-succinct/security/advisories/GHSA-4cqq-rfmm-f597)
+| | Succinct | Rust | High | [view ↗](https://github.com/succinctlabs/op-succinct/security/advisories/GHSA-4cqq-rfmm-f597) | - |
 | | Across Protocol | Solidity | Medium | TODO | - |
 | | [Private] | Solidity | Critical | [Private] | Immunefi |
 
