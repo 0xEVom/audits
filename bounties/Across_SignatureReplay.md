@@ -16,7 +16,7 @@ These mechanics together explain how deposits are identified and how updates are
 
 1. Missing field in the EIP‑712 witness for gasless orders: `AcrossOrderData`'s EIP‑712 type includes `depositNonce` (see type at [`ERC7683Permit2Lib.sol`](https://github.com/across-protocol/contracts/blob/69cc1dbdeea1a724a81ef423a0c69b6393275ecc/contracts/erc7683/ERC7683Permit2Lib.sol#L29-L41)), but [`hashOrderData()`](https://github.com/across-protocol/contracts/blob/69cc1dbdeea1a724a81ef423a0c69b6393275ecc/contracts/erc7683/ERC7683Permit2Lib.sol#L97-L113) omitted it from the struct hashing (highlighted below). This allowed a relayer to freely change `depositNonce` in the on‑chain call while still satisfying the user’s signature.
 
-```
+```solidity
 // ERC7683Permit2Lib.hashOrderData() - depositNonce omitted
 function hashOrderData(AcrossOrderData memory orderData) internal pure
 returns (bytes32) {
