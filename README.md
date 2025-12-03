@@ -37,9 +37,9 @@ You can reach out to me on:
 ## Bug Bounties
 | Date | Project | Language | Severity | Disclosure | Platform |
 | :-: | - | :-: | :-: | - | - |
-| | Succinct | Rust | High | [view ↗](https://github.com/succinctlabs/op-succinct/security/advisories/GHSA-4cqq-rfmm-f597) | - |
-| | Across Protocol | Solidity | Medium | TODO | - |
-| | [Private] | Solidity | Critical | [Private] | Immunefi |
+| Aug 2025 | Succinct | Rust | High | [view ↗](https://github.com/succinctlabs/op-succinct/security/advisories/GHSA-4cqq-rfmm-f597) | - |
+| Apr 2025 | Across Protocol | Solidity | Medium | TODO | - |
+| Jun 2024 | [Private] | Solidity | Critical | [Private] | Immunefi |
 
 ## Audit Contests
 
