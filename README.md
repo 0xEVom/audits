@@ -26,8 +26,8 @@ You can reach out to me on:
 || [Polygon Vault Bridge](https://www.agglayer.dev/agglayer-vaultbridge) V1.1 | Solidity | [view ↗](https://www.certora.com/reports/polygon-vault-bridge) | [0xlemon](https://x.com/0xlemonaudits) | Certora |
 || Mantle | Rust / OP Succinct | pending | []() | Blackthorn |
 || Fiamma | Solidity | [view ↗](https://github.com/zenith-security/reports/blob/main/reports/Fiamma%20-%20Zenith%20Audit%20Report.pdf) | []() | Zenith |
-|| [Lombard Finance](https://lombard.finance/) - Starknet LBTC | Cairo / Starknet | private | [@bin2chen](https://audits.sherlock.xyz/watson/bin2chen) | Blackthorn
-|| [Lombard Finance](https://lombard.finance/) - Starknet LBTC | Cairo / Starknet | private | [@0xTheC0der](https://github.com/MarioPoneder/audits) | Zenith
+|| [Lombard Finance](https://lombard.finance/) - Starknet LBTC | Cairo / Starknet | private | [bin2chen](https://audits.sherlock.xyz/watson/bin2chen) | Blackthorn
+|| [Lombard Finance](https://lombard.finance/) - Starknet LBTC | Cairo / Starknet | private | [Mario Poneder](https://www.decentra.vision/) | Zenith
 || [Polygon Vault Bridge](https://www.agglayer.dev/agglayer-vaultbridge) | Solidity | [view ↗](https://www.certora.com/reports/polygon-vault-bridge) | [Gerard Persoon](https://cantina.xyz/u/gpersoon) | Certora |
 || [Vultisig](https://vultisig.com/) | Solidity | [view ↗](https://github.com/zenith-security/reports/blob/main/reports/Vultisig%20-%20Zenith%20Audit%20Report.pdf) | [SpicyMeatball](https://soloaudit.com/auditor/spicymeatball) | Zenith |
 | Jan 2025 | [Ekubo](https://ekubo.org/) | Cairo / Starknet | [view ↗](https://315464330-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FTLfgXtzlwI2fzDVFEifT%2Fuploads%2FpJYdg1jp3g9ut87p5Emq%2Fplainshift%20ekubo.pdf?alt=media&token=1a51726d-1fcc-411a-ae1d-949e90f7e2e0) | [J4X](https://cantina.xyz/u/J4X98) | [Plainshift](https://plainshift.io/) |
