@@ -22,7 +22,7 @@ You can contact me on:
 
 | Date | Project | Language / Stack | Report | Collaborators | Facilitator |
 | :-: | - | :-: | :-: | - | - |
-| Nov 2025 | [Polygon Vault Bridge](https://www.agglayer.dev/agglayer-vaultbridge) V1.1 | Solidity | [view ↗](https://www.certora.com/reports/polygon-vault-bridge) | [@0xlemon](https://x.com/0xlemonaudits) | Certora |
+| Nov 2025 | [Polygon Vault Bridge](https://www.agglayer.dev/agglayer-vaultbridge) V1.1 | Solidity | pending | [@0xlemon](https://x.com/0xlemonaudits) | Certora |
 | Aug 2025 | [Mantle](https://www.mantle.xyz/) | Rust / OP Succinct | pending | [@blockdev](https://0xbok.github.io/) | Blackthorn |
 | Jul 2025 | [Fiamma](https://www.fiammalabs.io/) | Cairo / Starknet | [view ↗](https://github.com/zenith-security/reports/blob/main/reports/Fiamma%20-%20Zenith%20Audit%20Report.pdf) | []() | Zenith |
 | Jun 2025 | [Lombard Finance](https://lombard.finance/) - Starknet LBTC | Cairo / Starknet | private | [@bin2chen](https://audits.sherlock.xyz/watson/bin2chen) | Blackthorn |
