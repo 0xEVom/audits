@@ -41,7 +41,7 @@ You can contact me on:
 | Jan 2026 | [Private] | - | [Private] | [Private] | - | Cantina |
 | Aug 2025 | [OP Succinct](https://succinctlabs.github.io/op-succinct/) | Rust | High | [view ↗](https://github.com/succinctlabs/op-succinct/security/advisories/GHSA-4cqq-rfmm-f597) | - | - |
 | Apr 2025 | [Across](https://across.to/) | Solidity | Medium | [view ↗](./bounties/Across_SignatureReplay.md) | [@3DOↃ Security](https://3doc.fr/) | - |
-| Jun 2024 | [Private] | Solidity | Critical | [Private] | [@3DOↃ Security](https://3doc.fr/) | Immunefi |
+| Jun 2024 | [Private] | Solidity | Medium | [Private] | [@3DOↃ Security](https://3doc.fr/) | Immunefi |
 
 ## Audit Contests
 
