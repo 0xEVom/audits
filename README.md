@@ -47,9 +47,9 @@ You can contact me on:
 
 | Date | Contest | Language / Stack | Ranking | Report |
 | :-: | - | :-: | :-: | :-: |
-| Oct 2025 | [Succinct](https://code4rena.com/audits/2025-09-succinct) | Rust | 🥉3rd | pending |
-| Sep 2025 | [Monad](https://code4rena.com/audits/2025-09-monad) (team of 2) | C++, Rust | 🥉3rd | pending |
-| Sep 2025 | [Ethereum Fusaka Upgrade](https://audits.sherlock.xyz/contests/1140) (team of 3) | cross-language | 11th | pending |
+| Oct 2025 | [Succinct](https://code4rena.com/audits/2025-09-succinct) | Rust | 🥉3rd | [view ↗](https://code4rena.com/reports/2025-09-succinct) |
+| Sep 2025 | [Monad](https://code4rena.com/audits/2025-09-monad) (team of 2) | C++, Rust | 🥉3rd | [view ↗](https://code4rena.com/reports/2025-09-monad) |
+| Sep 2025 | [Ethereum Fusaka Upgrade](https://audits.sherlock.xyz/contests/1140) (team of 3) | cross-language | 11th | - |
 | Oct 2024 | [Kakarot](https://code4rena.com/audits/2024-09-kakarot) (team of 2) | Cairo Zero / Starknet | 🥇1st | [view ↗](https://code4rena.com/reports/2024-09-kakarot) |
 | Jul 2024 | [Reserve Core](https://code4rena.com/audits/2024-07-reserve-core) (team of 2) | Solidity | 🥇1st | [view ↗](https://code4rena.com/reports/2024-07-reserve) |
 | Jul 2024 | [Optimism Superchain](https://code4rena.com/audits/2024-07-optimism-superchain) (team of 3) | Solidity / Yul | 🥇1st | [view ↗](https://code4rena.com/reports/2024-07-optimism) |
