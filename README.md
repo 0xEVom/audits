@@ -30,12 +30,12 @@ You can contact me on:
 | Dec 2025 | [Cairo Corelib](https://docs.starknet.io/build/corelib/intro) | Cairo | pending | [Mario Poneder](https://www.decentra.vision/) | Zenith |
 | Nov 2025 | [Polygon Vault Bridge](https://www.agglayer.dev/agglayer-vaultbridge) V1.1 | Solidity | private | [@0xlemon](https://x.com/0xlemonaudits) | Certora |
 | Aug 2025 | [Mantle](https://www.mantle.xyz/) | Rust / OP Succinct | private | [@blockdev](https://0xbok.github.io/) | Blackthorn |
-| Jul 2025 | [Fiamma](https://www.fiammalabs.io/) | Cairo / Starknet | [view ↗](https://github.com/zenith-security/reports/blob/main/reports/Fiamma%20-%20Zenith%20Audit%20Report.pdf) | [@zzykxx](https://x.com/zzykxx) | Zenith |
-| Jun 2025 | [Lombard Finance](https://lombard.finance/) - Starknet LBTC | Cairo / Starknet | private | [@bin2chen](https://audits.sherlock.xyz/watson/bin2chen) | Blackthorn |
-| May 2025 | [Lombard Finance](https://lombard.finance/) - Starknet LBTC | Cairo / Starknet | private | [Mario Poneder](https://www.decentra.vision/) | Zenith |
+| Jul 2025 | [Fiamma](https://www.fiammalabs.io/) | Cairo | [view ↗](https://github.com/zenith-security/reports/blob/main/reports/Fiamma%20-%20Zenith%20Audit%20Report.pdf) | [@zzykxx](https://x.com/zzykxx) | Zenith |
+| Jun 2025 | [Lombard Finance](https://lombard.finance/) - Starknet LBTC | Cairo | private | [@bin2chen](https://audits.sherlock.xyz/watson/bin2chen) | Blackthorn |
+| May 2025 | [Lombard Finance](https://lombard.finance/) - Starknet LBTC | Cairo | private | [Mario Poneder](https://www.decentra.vision/) | Zenith |
 | Apr 2025 | [Polygon Vault Bridge](https://www.agglayer.dev/agglayer-vaultbridge) | Solidity | [view ↗](https://www.certora.com/reports/polygon-vault-bridge) | [Gerard Persoon](https://cantina.xyz/u/gpersoon) | Certora |
 | Mar 2025 | [Vultisig](https://vultisig.com/) | Solidity | [view ↗](https://github.com/zenith-security/reports/blob/main/reports/Vultisig%20-%20Zenith%20Audit%20Report.pdf) | [@SpicyMeatball](https://soloaudit.com/auditor/spicymeatball) | Zenith |
-| Jan 2025 | [Ekubo](https://ekubo.org/) | Cairo / Starknet | [view ↗](https://315464330-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FTLfgXtzlwI2fzDVFEifT%2Fuploads%2FpJYdg1jp3g9ut87p5Emq%2Fplainshift%20ekubo.pdf?alt=media&token=1a51726d-1fcc-411a-ae1d-949e90f7e2e0) | [@J4X](https://cantina.xyz/u/J4X98) | [Plainshift](https://plainshift.io/) |
+| Jan 2025 | [Ekubo](https://ekubo.org/) | Cairo | [view ↗](https://315464330-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FTLfgXtzlwI2fzDVFEifT%2Fuploads%2FpJYdg1jp3g9ut87p5Emq%2Fplainshift%20ekubo.pdf?alt=media&token=1a51726d-1fcc-411a-ae1d-949e90f7e2e0) | [@J4X](https://cantina.xyz/u/J4X98) | [Plainshift](https://plainshift.io/) |
 | Dec 2024 | [Optimism DeputyPauseModule](https://github.com/ethereum-optimism/optimism/commit/2f17e6b67c61de5d8073d556272796d201bc740b) | Solidity | [view ↗](https://github.com/ethereum-optimism/optimism/blob/develop/docs/security-reviews/2024_12-DPM-RadiantLabs.pdf) | - | - |
 | Dec 2024 | [Bitcorn](https://x.com/use_corn) OFT + Swap Facility | Solidity | [view ↗](https://github.com/usecorn/audits/blob/main/bitcorn/Zenith-Bitcorn-OFT-Swap-Facility.pdf) | [@3DOↃ Security](https://3doc.fr/) | Zenith |
 | Feb 2024 | [Spectra](https://www.spectra.finance/) | Solidity | [view ↗](https://github.com/pashov/audits/blob/master/team/pdf/Spectra-security-review.pdf) | [@unforgiven](https://code4rena.com/@unforgiven), [@0xbepresent](https://bepresent.mx/) | Pashov Audit Group |
@@ -56,7 +56,7 @@ You can contact me on:
 | Oct 2025 | [Succinct](https://code4rena.com/audits/2025-09-succinct) | Rust | 🥉3rd | [view ↗](https://code4rena.com/reports/2025-09-succinct) |
 | Sep 2025 | [Monad](https://code4rena.com/audits/2025-09-monad) (team of 2) | C++, Rust | 🥉3rd | [view ↗](https://code4rena.com/reports/2025-09-monad) |
 | Sep 2025 | [Ethereum Fusaka Upgrade](https://audits.sherlock.xyz/contests/1140) (team of 3) | cross-language | 11th | - |
-| Oct 2024 | [Kakarot](https://code4rena.com/audits/2024-09-kakarot) (team of 2) | Cairo Zero / Starknet | 🥇1st | [view ↗](https://code4rena.com/reports/2024-09-kakarot) |
+| Oct 2024 | [Kakarot](https://code4rena.com/audits/2024-09-kakarot) (team of 2) | Cairo Zero | 🥇1st | [view ↗](https://code4rena.com/reports/2024-09-kakarot) |
 | Jul 2024 | [Reserve Core](https://code4rena.com/audits/2024-07-reserve-core) (team of 2) | Solidity | 🥇1st | [view ↗](https://code4rena.com/reports/2024-07-reserve) |
 | Jul 2024 | [Optimism Superchain](https://code4rena.com/audits/2024-07-optimism-superchain) (team of 3) | Solidity / Yul | 🥇1st | [view ↗](https://code4rena.com/reports/2024-07-optimism) |
 | Sep 2024 | [Fenix Finance](https://app.hats.finance/audit-competitions/fenix-0x9d7765a7ebd5b6322a30797a44a5428531970d3d/leaderboard) | Solidity | 🥇1st | - |
