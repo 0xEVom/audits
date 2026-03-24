@@ -8,10 +8,10 @@ I initially developed my expertise through competitive audits on Code4rena, wher
 
 I'm fortunate to work with a number of trusted, full-service facilitators who manage engagement logistics and client operations, allowing me to focus exclusively on the security of your codebase. To engage me as an auditor, contact any of the providers below and request to work with me:
 
-- [Blackthorn](https://www.blackthorn.xyz/) (Sherlock)
-- [Zenith](https://www.zenith.security/) (Code4rena)
 - [Spearbit/Cantina](https://cantina.xyz/solutions/spearbit)
 - [Certora](https://www.certora.com/audits)
+- [Blackthorn](https://www.blackthorn.xyz/) (Sherlock)
+- [Zenith](https://www.zenith.security/) (Code4rena)
 
 You can contact me on:
 
