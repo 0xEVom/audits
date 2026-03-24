@@ -24,6 +24,7 @@ You can contact me on:
 
 | Date | Project | Language / Stack | Report | Collaborators | Facilitator |
 | :-: | - | :-: | :-: | - | - |
+| Feb 2026 | [Miden VM](https://docs.miden.xyz/core-concepts/miden-vm/) | Rust | pending | [@cergyk](https://cergyk.dev/) | Spearbit |
 | Nov 2025 | [Polygon Vault Bridge](https://www.agglayer.dev/agglayer-vaultbridge) V1.1 | Solidity | private | [@0xlemon](https://x.com/0xlemonaudits) | Certora |
 | Aug 2025 | [Mantle](https://www.mantle.xyz/) | Rust / OP Succinct | private | [@blockdev](https://0xbok.github.io/) | Blackthorn |
 | Jul 2025 | [Fiamma](https://www.fiammalabs.io/) | Cairo / Starknet | [view ↗](https://github.com/zenith-security/reports/blob/main/reports/Fiamma%20-%20Zenith%20Audit%20Report.pdf) | [@zzykxx](https://x.com/zzykxx) | Zenith |
