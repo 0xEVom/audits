@@ -2,9 +2,9 @@
 
 ## About
 
-I'm an independent security researcher specialized in Solidity, Cairo and Rust audits. In the past, I have worked on DeFi protocols, cross-chain applications, ZK systems, and VM as well as node implementations. I prefer not to specialise in any single area in order to develop the broadest possible understanding of the full blockchain stack. I enjoy working on longer duration engagements and high complexity systems - the more challenging an audit, the more likely I am to accept it.
+I'm an independent security researcher specialized in Solidity, Cairo and Rust audits. In the past, I have worked on DeFi protocols, cross-chain applications, ZK systems, and VM as well as node implementations. I prefer not to specialise in any single area in order to develop the broadest possible understanding of the full blockchain stack. I enjoy working on longer duration engagements and high complexity systems.
 
-I initially developed my expertise through competitive audits on Code4rena, where I ranked #8 solo and #2 with [Radiant Labs](https://code4rena.com/@RadiantLabs) on the 2024 yearly [leaderboard](https://code4rena.com/leaderboard?timeframe=2024). Nowadays, I (seldom) act as a judge on Code4rena and Cantina.
+I initially developed my expertise through competitive audits on Code4rena, where I ranked #8 solo and #2 with [Radiant Labs](https://code4rena.com/@RadiantLabs) on the 2024 yearly [leaderboard](https://code4rena.com/leaderboard?timeframe=2024). Nowadays, I spend my time mostly bounty hunting and on selected security reviews.
 
 I'm fortunate to work with a number of trusted, full-service facilitators who manage engagement logistics and client operations, allowing me to focus exclusively on the security of your codebase. To engage me as an auditor, contact any of the providers below and request to work with me:
 
