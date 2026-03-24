@@ -8,6 +8,8 @@ I initially developed my expertise through competitive audits on Code4rena, wher
 
 Nowadays, I spend my time mostly bounty hunting and on selected security reviews.
 
+## Working with me
+
 I'm fortunate to work with a number of trusted, full-service facilitators who manage engagement logistics and client operations, allowing me to focus exclusively on the security of your codebase. To engage me as an auditor, contact any of the providers below and request to work with me:
 
 - [Spearbit/Cantina](https://cantina.xyz/solutions/spearbit)
