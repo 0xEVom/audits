@@ -26,6 +26,7 @@ You can contact me on:
 
 | Date | Project | Language / Stack | Report | Collaborators | Facilitator |
 | :-: | - | :-: | :-: | - | - |
+| Apr 2026 | [Miden Agglayer Bridge](https://github.com/gateway-fm/miden-agglayer) | Rust, MASM | pending | [@cergyk](https://cergyk.dev/) | Spearbit |
 | Feb 2026 | [Miden VM](https://docs.miden.xyz/core-concepts/miden-vm/) | Rust | pending | [@cergyk](https://cergyk.dev/) | Spearbit |
 | Dec 2025 | [Cairo Corelib](https://docs.starknet.io/build/corelib/intro) | Cairo | pending | [Mario Poneder](https://www.decentra.vision/) | Zenith |
 | Nov 2025 | [Polygon Vault Bridge](https://www.agglayer.dev/agglayer-vaultbridge) V1.1 | Solidity | private | [@0xlemon](https://x.com/0xlemonaudits) | Certora |
