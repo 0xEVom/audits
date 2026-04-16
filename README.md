@@ -29,12 +29,12 @@ You can contact me on:
 | Apr 2026 | [Miden Agglayer Bridge](https://github.com/gateway-fm/miden-agglayer) | Rust, MASM | pending | [@cergyk](https://cergyk.dev/) | Spearbit |
 | Feb 2026 | [Miden VM](https://docs.miden.xyz/core-concepts/miden-vm/) | Rust | pending | [@cergyk](https://cergyk.dev/) | Spearbit |
 | Dec 2025 | [Cairo Corelib](https://docs.starknet.io/build/corelib/intro) | Cairo | pending | [Mario Poneder](https://www.decentra.vision/) | Zenith |
-| Nov 2025 | [Polygon Vault Bridge](https://www.agglayer.dev/agglayer-vaultbridge) V1.1 | Solidity | private | [@0xlemon](https://x.com/0xlemonaudits) | Certora |
+| Nov 2025 | [Agglayer Vault Bridge](https://www.agglayer.dev/agglayer-vaultbridge) V1.1 | Solidity | private | [@0xlemon](https://x.com/0xlemonaudits) | Certora |
 | Aug 2025 | [Mantle](https://www.mantle.xyz/) | Rust / OP Succinct | private | [@blockdev](https://0xbok.github.io/) | Blackthorn |
 | Jul 2025 | [Fiamma](https://www.fiammalabs.io/) | Cairo | [view ↗](https://github.com/zenith-security/reports/blob/main/reports/Fiamma%20-%20Zenith%20Audit%20Report.pdf) | [@zzykxx](https://x.com/zzykxx) | Zenith |
 | Jun 2025 | [Lombard Finance](https://lombard.finance/) - Starknet LBTC | Cairo | private | [@bin2chen](https://audits.sherlock.xyz/watson/bin2chen) | Blackthorn |
 | May 2025 | [Lombard Finance](https://lombard.finance/) - Starknet LBTC | Cairo | private | [Mario Poneder](https://www.decentra.vision/) | Zenith |
-| Apr 2025 | [Polygon Vault Bridge](https://www.agglayer.dev/agglayer-vaultbridge) | Solidity | [view ↗](https://www.certora.com/reports/polygon-vault-bridge) | [Gerard Persoon](https://cantina.xyz/u/gpersoon) | Certora |
+| Apr 2025 | [Agglayer Vault Bridge](https://www.agglayer.dev/agglayer-vaultbridge) | Solidity | [view ↗](https://www.certora.com/reports/polygon-vault-bridge) | [Gerard Persoon](https://cantina.xyz/u/gpersoon) | Certora |
 | Mar 2025 | [Vultisig](https://vultisig.com/) | Solidity | [view ↗](https://github.com/zenith-security/reports/blob/main/reports/Vultisig%20-%20Zenith%20Audit%20Report.pdf) | [@SpicyMeatball](https://soloaudit.com/auditor/spicymeatball) | Zenith |
 | Jan 2025 | [Ekubo](https://ekubo.org/) | Cairo | [view ↗](https://315464330-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FTLfgXtzlwI2fzDVFEifT%2Fuploads%2FpJYdg1jp3g9ut87p5Emq%2Fplainshift%20ekubo.pdf?alt=media&token=1a51726d-1fcc-411a-ae1d-949e90f7e2e0) | [@J4X](https://cantina.xyz/u/J4X98) | [Plainshift](https://plainshift.io/) |
 | Dec 2024 | [Optimism DeputyPauseModule](https://github.com/ethereum-optimism/optimism/commit/2f17e6b67c61de5d8073d556272796d201bc740b) | Solidity | [view ↗](https://github.com/ethereum-optimism/optimism/blob/develop/docs/security-reviews/2024_12-DPM-RadiantLabs.pdf) | - | - |
