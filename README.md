@@ -52,7 +52,7 @@ You can contact me on:
 
 ## CTFs
 
-| Date | Event | Challenge | Stack | Links |
+| Date | Event | Contribution | Stack | Links |
 | :-: | - | - | :-: | - |
 | Jul 2026 | [Wonderland CTF 2026](https://ctf.wonderland.xyz/) | Designed *Liquid Omens* | Solidity | [source ↗](https://github.com/defi-wonderland/wonderland-ctf-2026) |
 
