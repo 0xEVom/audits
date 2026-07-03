@@ -50,6 +50,12 @@ You can contact me on:
 | Apr 2025 | [Across](https://across.to/) | Solidity | Medium | [view ↗](./bounties/Across_SignatureReplay.md) | [@3DOↃ Security](https://3doc.fr/) | - |
 | Jun 2024 | [Private] | Solidity | Medium | [Private] | [@3DOↃ Security](https://3doc.fr/) | Immunefi |
 
+## CTFs
+
+| Date | Event | Challenge | Stack | Links |
+| :-: | - | - | :-: | - |
+| Jul 2026 | [Wonderland CTF 2026](https://ctf.wonderland.xyz/) | Designed *Liquid Omens* | Solidity | [source ↗](https://github.com/defi-wonderland/wonderland-ctf-2026) |
+
 ## Audit Contests
 
 | Date | Contest | Language / Stack | Ranking | Report |
